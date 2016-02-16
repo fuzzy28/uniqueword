@@ -10,7 +10,7 @@ public class UniqueWord {
 	public static String get(String str) {
 		String word = str.toLowerCase();
 		String candidate = "";
-		// divide the given word starting from half length of the word up to 2
+		// divide the given word starting from half length of the word down to 2
 		main: for (int i = word.length() / 2; i > 1; i--) {
 			String preivousWord = word.substring(0, i);
 			// variable that will hold if words divided are equal to each other
